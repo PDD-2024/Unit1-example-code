@@ -1,2 +1,2 @@
-# Unit1-example-code
-Unit 1 example codes
+# Slides example codes
+All example codes are divided in folders by unit
