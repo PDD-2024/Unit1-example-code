@@ -1,0 +1,15 @@
+# FILEPATH: /home/g5fighter/PDD/Unit 5/Ninja/1_Simple/build.ninja
+
+# Rule to compile a C++ source file
+rule compile
+  command = g++ -c $in -o $out
+
+# Rule to link object files into an executable
+rule link
+  command = g++ $in -o $out
+
+# Build rule for your source file
+build output.o: compile main.cpp
+
+# Build rule for the final executable
+build output: link output.o
